@@ -1,12 +1,12 @@
 package com.example.coolweather.db;
 
-import org.litepal.crud.DataSupport;
+import org.litepal.crud.LitePalSupport;
 
-public class Province extends DataSupport {
+public class Province extends LitePalSupport {
 
     private int id;
     private String provinceName;
-    private String provinceCode;
+    private int provinceCode;
 
     public int getId() {
         return id;
@@ -24,11 +24,11 @@ public class Province extends DataSupport {
         this.provinceName = provinceName;
     }
 
-    public String getProvinceCode() {
+    public int getProvinceCode() {
         return provinceCode;
     }
 
-    public void setProvinceCode(String provinceCode) {
+    public void setProvinceCode(int provinceCode) {
         this.provinceCode = provinceCode;
     }
 }
